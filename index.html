@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <div class="d-flex">
+        
+        <label class="para">p</label>
+        <input type="text" id="p">
+
+        <br>
+        <br>
+        
+        <label class="para1">r</label>
+        <input type="text" id="r">
+
+        <br>
+        <br>
+
+        <label class="para2">n</label>
+        <input type="text" id="n">
+
+        <br>
+        <br>
+        
+        <input type="submit" onclick="return salary()">
+
+  
+
+        <div>
+
+            <p id="p" class="gross"></p>
+
+            <p id="r" class="gross"></p>
+
+            <p id="a" class="gross"></p>
+
+            <p id="i" class="gross"></p>
+        </div>
+</div>
+    <script>
+
+        function salary(){
+            var p = parseInt(document.getElementById("p").value);
+            var r = parseInt(document.getElementById("r").value);
+            var n = parseInt(document.getElementById("n").value);
+
+            document.getElementById("")
+
+            var a = p*(1+r*n/100);
+
+            var i=a-p;
+
+            console.log(a);
+            console.log(i);
+
+            document.getElementById("a").innerHTML="your accurred amount is:"+a;
+            document.getElementById("i").innerHTML="your interest amount is:"+i;
+
+        }
+
+    </script>
+</body>
+</html>
